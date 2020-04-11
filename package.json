@@ -25,5 +25,9 @@
   },
   "dependencies": {
     "promises-aplus-tests": "^2.1.2"
+  },
+  "scripts": {
+    "gen_all_tests":"node closure/bin/generate_closure_unit_tests/generate_closure_unit_tests.js --base=closure/goog/base.js --recursive ./closure/goog/ --overwrite",
+    "serve_tests": "cd ./closure/goog && python -m SimpleHTTPServer"
   }
 }
